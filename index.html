@@ -1,243 +1,404 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snek</title>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snek</title>
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+          rel="stylesheet"
+        />
 
-    <!--Feather Icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
+        <!--Feather Icons-->
+        <script src="https://unpkg.com/feather-icons"></script>
 
-    <!--My Style-->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!--Nabar Start-->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">Snek<span>.id</span></a>
+        <!--My Style-->
+        <link rel="stylesheet" href="css/style.css" />
+      </head>
+      <body>
+        <!--Nabar Start-->
+        <nav class="navbar">
+          <a href="#" class="navbar-logo">Snek<span>.id</span></a>
+          <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">about</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Product</a>
+            <a href="#contact">Contact</a>
+          </div>
 
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
-      </div>
+          <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
 
-      <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-    </nav>
+          <!--Search Section-->
+          <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box"><i data-feather="search"></i></label>
+          </div>
 
-    <!--Nabar End-->
+          <!--Shopping Cart Start-->
+          <div class="shopping-cart">
+            <div class="cart-item">
+              <img src="img/product/2.jpg" alt="Product 1" />
+              <div class="item-detail">
+                <h3>Product 1</h3>
+                <div class="item-price">IDR 6K</div>
+              </div>
+              <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+              <img src="img/product/2.jpg" alt="Product 1" />
+              <div class="item-detail">
+                <h3>Product 1</h3>
+                <div class="item-price">IDR 6K</div>
+              </div>
+              <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+              <img src="img/product/2.jpg" alt="Product 1" />
+              <div class="item-detail">
+                <h3>Product 1</h3>
+                <div class="item-price">IDR 6K</div>
+              </div>
+              <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+          </div>
 
-    <!--Hero Section Start-->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>
-          Mari Temani Tugasmu
-          <h1>Dengan <span>Snack</span></h1>
-        </h1>
+          <!--Shopping Cart End-->
+        </nav>
+        <!--Nabar End-->
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-          enim.
-        </p>
-        <a href="#" class="cta">Beli Sekarang</a>
-      </main>
-    </section>
+        <!--Hero Section Start-->
+        <section class="hero" id="home">
+          <main class="content"> 
+            <h1>
+              Mari Temani Tugasmu
+              <h1>Dengan <span>Snack</span></h1>
+            </h1>
 
-    <!--Hero Section End-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+              enim.
+            </p>
+            <a href="#" class="cta">Beli Sekarang</a>
+          </main>
+        </section>
 
-    <!--About Section Strat-->
-    <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
+        <!--Hero Section End-->
 
-      <div class="row">
-        <div class="about-img">
-          <img src="img/tentangkami.jpg" alt="Tentang Kami" />
-        </div>
-        <div class="content">
-          <h3>Kenapa Memilih Snack Kami?</h3>
+        <!--About Section Strat-->
+        <section id="about" class="about">
+          <h2><span>About</span> Us</h2>
+
+          <div class="row">
+            <div class="about-img">
+              <img src="img/tentangkami.jpg" alt="Tentang Kami" />
+            </div>
+            <div class="content">
+              <h3>Kenapa Memilih Snack Kami?</h3>
+              <p>
+                Karena hidup sibuk nggak berarti harus ngemil asal-asalan. Snack
+                kami hadir buat kamu yang aktif, produktif, dan butuh asupan lezat
+                yang bisa diandalkan kapan aja. Dibuat dari bahan berkualitas tanpa
+                pengawet berbahaya, snack kami punya rasa yang nggak ngebosenin —
+                dari yang manis, gurih, sampai pedas nendang! Cocok nemenin kamu
+                nugas, begadang, zoom meeting, atau sekadar butuh hiburan di tengah
+                macet dan deadline. Kemasannya juga simpel dan kekinian, gampang
+                dibawa ke mana pun kamu pergi.
+              </p>
+              <p>
+                Buat mahasiswa yang suka cari camilan hemat tapi enak, atau pekerja
+                muda yang butuh energi tambahan tanpa ribet — snack kami jawabannya.
+                Udah banyak yang buktiin: enak, praktis, dan pastinya bikin hari
+                kamu lebih seru. Karena ngemil itu bukan cuma soal kenyang, tapi
+                juga soal mood. Jadi, tunggu apa lagi? Coba snack kami sekarang, dan
+                temukan teman setia buat hari-hari super sibukmu!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--About Section End-->
+
+        <!--Menu Section Start-->
+        <section id="menu" class="menu">
+          <h2><span>Our</span> Menu</h2>
           <p>
-            Karena hidup sibuk nggak berarti harus ngemil asal-asalan. Snack
-            kami hadir buat kamu yang aktif, produktif, dan butuh asupan lezat
-            yang bisa diandalkan kapan aja. Dibuat dari bahan berkualitas tanpa
-            pengawet berbahaya, snack kami punya rasa yang nggak ngebosenin —
-            dari yang manis, gurih, sampai pedas nendang! Cocok nemenin kamu
-            nugas, begadang, zoom meeting, atau sekadar butuh hiburan di tengah
-            macet dan deadline. Kemasannya juga simpel dan kekinian, gampang
-            dibawa ke mana pun kamu pergi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a impedit
+            illum error minima laborum?
           </p>
+
+          <div class="row">
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Tahu Bulat Kering"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Tahu Bulat Kering -</h3>
+              <p class="menu-card-price">IDR 6K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Twister Mini Black"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Twister Mini Black -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Seblak Kering Cabe Hijau"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Seblak Kering Cabe Hijau -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Kue Sus Mini Kering"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Kue Sus Mini Kering -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Siomay Jeletot"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Siomay Jeletot -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/menu/1.jpg"
+                alt="Usus Spicy & Original"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Usus Spicy & Orginal -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img src="img/menu/1.jpg" alt="Stik Coklat" class="menu-card-img" />
+              <h3 class="menu-card-title">- Stik Coklat -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+            <div class="menu-card">
+              <img src="img/menu/1.jpg" alt="Original Ring" class="menu-card-img" />
+              <h3 class="menu-card-title">- Original Ring -</h3>
+              <p class="menu-card-price">IDR 5K</p>
+            </div>
+          </div>
+        </section>
+        <!--Menu Section End-->
+        <!--Products Section Start-->
+        <section class="products" id="products">
+          <h2><span>Our Superior</span> Products</h2>
           <p>
-            Buat mahasiswa yang suka cari camilan hemat tapi enak, atau pekerja
-            muda yang butuh energi tambahan tanpa ribet — snack kami jawabannya.
-            Udah banyak yang buktiin: enak, praktis, dan pastinya bikin hari
-            kamu lebih seru. Karena ngemil itu bukan cuma soal kenyang, tapi
-            juga soal mood. Jadi, tunggu apa lagi? Coba snack kami sekarang, dan
-            temukan teman setia buat hari-hari super sibukmu!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea,
+            voluptatibus amet labore quia accusantium.
           </p>
-        </div>
-      </div>
-    </section>
 
-    <!--About Section End-->
-
-    <!--Menu Section Start-->
-    <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a impedit
-        illum error minima laborum?
-      </p>
-
-      <div class="row">
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/menu/1.jpg"
-            alt="Keripik Singkong"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Keripik Singkong -</h3>
-          <p class="menu-card-price">IDR 5K</p>
-        </div>
-      </div>
-    </section>
-    <!--Menu Section End-->
-
-    <!--Contact Section Start-->
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum ut
-        fugit non, perspiciatis consequuntur. Facilis vero odit exercitationem
-        deleniti.
-      </p>
-
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.970855558626!2d110.33364504395989!3d-7.803248457450711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1745316710639!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
-
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
+          <div class="row">
+            <div class="products-card">
+              <div class="products-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+              </div>
+              <div class="products-img">
+                <img src="img/product/2.jpg" alt="Product 1" />
+              </div>
+              <div class="products-content">
+                <h3>Tahu Bulat kering</h3>
+                <div class="products-stars">
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <div class="products-price">IDR 6</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+              </div>
+              <div class="products-img">
+                <img src="img/product/2.jpg" alt="Product 1" />
+              </div>
+              <div class="products-content">
+                <h3>Tahu Bulat kering</h3>
+                <div class="products-stars">
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <div class="products-price">IDR 6</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+              </div>
+              <div class="products-img">
+                <img src="img/product/2.jpg" alt="Product 1" />
+              </div>
+              <div class="products-content">
+                <h3>Tahu Bulat kering</h3>
+                <div class="products-stars">
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <div class="products-price">IDR 6</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-icon">
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+              </div>
+              <div class="products-img">
+                <img src="img/product/2.jpg" alt="Product 1" />
+              </div>
+              <div class="products-content">
+                <h3>Tahu Bulat kering</h3>
+                <div class="products-stars">
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <div class="products-price">IDR 6</div>
+              </div>
+            </div>
           </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+        </section>
+
+        <!--Products Section End-->
+
+        <!--Contact Section Start-->
+        <section id="contact" class="contact">
+          <h2><span>Contact</span> Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsum ut
+            fugit non, perspiciatis consequuntur. Facilis vero odit exercitationem
+            deleniti.
+          </p>
+
+          <div class="row">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.970855558626!2d110.33364504395989!3d-7.803248457450711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1745316710639!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+            ></iframe>
+
+            <form action="">
+              <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="nama" />
+              </div>
+              <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="email" />
+              </div>
+              <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="no hp" />
+              </div>
+              <button type="submit" class="btn">Kirim pesan</button>
+            </form>
           </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
+        </section>
+
+        <!--Contact Section End-->
+
+        <!--Footer Section Start-->
+        <footer>
+          <div class="socials">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
           </div>
-          <button type="submit" class="btn">Kirim pesan</button>
-        </form>
-      </div>
-    </section>
 
-    <!--Contact Section End-->
+          <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Product</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="credit">
+            <p>Created by <a href="">luqmanulhakiem</a>| &copy; 2025</p>
+          </div>
+        </footer>
 
-    <!--Footer Section Start-->
-    <footer>
-      <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
-      </div>
-     
-      
-      
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
-      </div>
-      <div class="credit">
-        <p>Created by <a href="">luqmanulhakiem</a>| &copy; 2025</p>
-      </div>
-    </footer>
+        <!--Footer Section End-->
 
+        <!--Modal Box Item Detail Start-->
+        <div class="modal" id="item-detail-modal">
+          <div class="modal-container">
+            <a href="#" class="close-modal"><i data-feather="x"></i></a>
+            <div class="modal-content">
+              <img src="img/product/2.jpg" alt="Product 1" />
+              <div class="product-content">
+                <h3>Product 1</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  saepe vero! Est porro libero, fuga neque odit voluptates aperiam
+                  iusto quae, quis inventore molestias error!
+                </p>
+                <div class="products-stars">
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star" class="star-full"></i>
+                  <i data-feather="star"></i>
+                </div>
+                <div class="products-price">IDR 6K</div>
+                <div class="cart-icon">
+                  <a href="#" ><i data-feather="shopping-cart"></i>
+                    <span>add to cart</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!--Modal Box Item Detail End-->
 
-    <!--Footer Section End-->
-   
+        <!--Feather Icon-->
+        <script>
+          feather.replace();
+        </script>
 
-    <!--Feather Icon-->
-    <script>
-      feather.replace();
-    </script>
+        <!--My Javascript-->
+        <script src="js/script.js"></script>
+      </body>
+    </html>
 
-    <!--My Javascript-->
-    <script src="js/script.js"></script>
-  </body>
-</html>
+    
